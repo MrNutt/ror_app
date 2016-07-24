@@ -8,6 +8,8 @@ gem 'rails', '~> 5.0.0'
 gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
+#Use Cpaybara as one of the test apps
+gem 'capybara'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -39,7 +41,6 @@ end
 
 group :test do
   gem 'selenium-webdriver'
-  gem 'capybara'
 end
 
 group :development do
