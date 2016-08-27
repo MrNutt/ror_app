@@ -21,7 +21,7 @@
 .byebug_history
 
 # Igonre other usefull staff
-database.yml
+# database.yml
 doc/
 *.swp
 *~
