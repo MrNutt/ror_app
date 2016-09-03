@@ -51,6 +51,8 @@ describe "signup page" do
   describe "not valid form" do
     it "should not create user" do
       expect { click_button submit}.not_to change {User.count}
+      expect { should have_title('Sign up') }
+      expect { should have_content('error') }
     end
   end
 end
