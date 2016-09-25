@@ -1,0 +1,14 @@
+<% provide(:title, 'All users') %>
+<h1>All users</h1>
+
+<%= will_paginate %> 
+<div>
+<label for="per_page">Records per page: </label>
+<%= select_tag :per_page, options_for_select([10,20,30], params[:per_page].to_i),
+       :onchange => "if(this.value){window.location='?per_page='+this.value;}" %>
+</div>
+<ul class="users">
+	<%= render @users %>
+</ul>
+
+<%= will_paginate %>

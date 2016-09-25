@@ -5,6 +5,9 @@ source 'https://rubygems.org'
 gem 'rails', '~> 5.0.0'
 gem 'bcrypt'
 gem 'bootstrap-sass', '~> 2.3'
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
@@ -45,7 +48,7 @@ group :test do
   gem 'selenium-webdriver'
   gem 'factory_girl_rails'
   gem 'cucumber-rails', :require => false
-  gem 'database_cleaner', github: 'bmabey/database_cleaner'
+  #gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 
 group :development do
